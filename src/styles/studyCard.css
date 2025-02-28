@@ -1,22 +1,79 @@
 .study-card {
-    background-color: hsl(200, 89%, 18%);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 300px;
-    align-items: left;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px; 
+    cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out
 }
 
-.study-card li {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    margin-bottom: 10px;
-    align-items: left;
+.study-card:hover {
+    transform: scale(1.07);
+}
 
-    padding-left: 10px;
+
+.card-inner {
+    width: 100%;
+    height: 100%;
     position: relative;
+    transition: transform 0.35s ease-in-out;
+    transform-style: preserve-3d;
+    box-sizing: border-box; 
+}
+
+
+
+.study-card.flipped .card-inner {
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    background-color: hsl(225, 27%, 20%);
+    box-sizing: border-box; 
+    padding: 20px; 
+}
+
+
+.card-front {
+    color: white;
+}
+
+.card-back {
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+.card-back pre { 
+    text-align: left; 
+    background-color: black;
+    color: limegreen;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    width: 90%;
+    max-width: 250px; 
+    overflow-x: auto;
+    margin-top: 10px;
+    user-select: text;
 }
 
 .language-logo {
@@ -27,19 +84,10 @@
     height: 40px;
 }
 
-.study-card:hover {
-    transform: scale(1.04);
-    background-color: hsl(200, 89%, 19%);
-    transition: transform 0.1s ease-in-out;
-    font-weight: bold;
-}
-
-
-
-
-@media (max-width: 600px) {
-    .study-card {
-        max-width: 90%;
-        padding: 15px;
-    }
+.language-logo-back {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
 }

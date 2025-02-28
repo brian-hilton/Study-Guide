@@ -15,6 +15,7 @@ function App() {
           typing={card.typing}
           applications={card.applications}
           image={card.image}
+          syntax={card.syntax}
         />
       ))}
     </div>
