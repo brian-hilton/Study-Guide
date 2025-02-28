@@ -1,3 +1,5 @@
+import "../styles/studyCard.css";
+
 function Example() {
   return (
     <>
@@ -5,7 +7,8 @@ function Example() {
         <h2>Typescript</h2>
         <ul>
           <li>Superset of Javascript</li>
-          <li>Statically Typed</li>
+          <li>Strongly (Statically) Typed</li>
+          <li>Object-oriented; JS is prototype-based</li>
         </ul>
       </div>
     </>
