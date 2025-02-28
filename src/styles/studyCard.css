@@ -16,7 +16,6 @@
     
 }
 
-
 .card-inner {
     width: 100%;
     height: 100%;
@@ -45,7 +44,7 @@
     align-items: center;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-    background-color: hsl(225, 27%, 20%);
+    background-color: hsl(225, 27%, 30%);
     box-sizing: border-box; 
     padding: 20px; 
 }
@@ -53,12 +52,22 @@
 
 .card-front {
     color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.card-front:hover {
+    color: hsl(69, 100%, 60%)
 }
 
 .card-back {
     color: white;
     transform: rotateY(180deg);
     text-align: center;
+}
+
+.card-back:hover {
+    color: hsl(69, 100%, 60%)
 }
 
 .card-back pre { 
