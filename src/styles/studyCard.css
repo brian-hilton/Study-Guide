@@ -13,6 +13,7 @@
 
 .study-card:hover {
     transform: scale(1.07);
+    
 }
 
 
@@ -24,8 +25,6 @@
     transform-style: preserve-3d;
     box-sizing: border-box; 
 }
-
-
 
 .study-card.flipped .card-inner {
     transform: rotateY(180deg);
