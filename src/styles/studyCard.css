@@ -5,7 +5,7 @@
     border-radius: 10px;
     max-width: 300px;
     align-items: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -13,4 +13,33 @@
     color: rgb(255, 255, 255);
     font-weight: bold;
     margin-bottom: 10px;
+    align-items: left;
+
+    padding-left: 10px;
+    position: relative;
+}
+
+.language-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.study-card:hover {
+    transform: scale(1.04);
+    background-color: hsl(200, 89%, 19%);
+    transition: transform 0.1s ease-in-out;
+    font-weight: bold;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .study-card {
+        max-width: 90%;
+        padding: 15px;
+    }
 }

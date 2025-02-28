@@ -1,12 +1,23 @@
 import { useState } from "react";
-import Example from "./components/example";
+import StudyCard from "./components/StudyCard";
+import "./styles/studyPage.css";
+import { studyCardsData } from "./data/studyCardsData";
 import "./App.css";
 
 function App() {
   return (
-    <>
-      <Example />
-    </>
+    <div className="study-page">
+      {studyCardsData.map((card, index) => (
+        <StudyCard
+          key={index}
+          title={card.title}
+          description={card.description}
+          typing={card.typing}
+          applications={card.applications}
+          image={card.image}
+        />
+      ))}
+    </div>
   );
 }
 
