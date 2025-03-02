@@ -3,11 +3,9 @@ import { Link } from "react-router-dom";
 function Dashboard() {
     return (
         <div className="dashboard">
-            <h1>Programming Languages</h1>
-            <p>Select a page:</p>
-            <ul>
-                <li><Link to="/study">Go to flashcard page</Link></li>
-            </ul>
+            <h1>Programming and Web-Based Development</h1>
+            <p>Use the links above to navigate</p>
+            
         </div>
     )
 }

@@ -6,7 +6,9 @@ function NavBar() {
         <nav className="navbar">
             <ul>
                 <li><Link to="/">Dashboard</Link></li>
-                <li><Link to="/study">Flashcards</Link></li>
+                <li><Link to="/study">Language Flashcards</Link></li>
+                <li><Link to="/frameworks">Common Frameworks</Link></li>
+                <li><Link to="/databases">Databases and SQL</Link></li>
             </ul>
         </nav>
     )
