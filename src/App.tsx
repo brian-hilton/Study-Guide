@@ -12,7 +12,7 @@ function App() {
         <nav>
           <ul>
             <li><Link to="/">Dashboard</Link></li>
-            <li><Link to="/study">Study Page</Link></li>
+            <li><Link to="/study">Flashcards</Link></li>
           </ul>
         </nav>
         <Routes>
