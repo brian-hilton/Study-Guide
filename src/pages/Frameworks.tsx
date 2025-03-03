@@ -1,5 +1,9 @@
+import FrameworkCard from "../components/FrameworkCard"
+
 function Frameworks() {
-    return (<></>)
+    return (<>
+    <FrameworkCard />
+    </>)
 }
 
 export default Frameworks
