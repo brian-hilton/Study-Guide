@@ -1,18 +1,18 @@
-function FrameworkCard() {
-    return(
-    <>
-    <div className="framework-div">
-        <h2> Python </h2>
-        <h3>Web Development:
-            <ul>
-                <li>Flask</li>
-                <li>Django</li>
-                <li>CherryPy</li>
-            </ul>
-        </h3>
+import { useState } from "react";
+import "../data/frameworkCardData";
+import "../styles/frameworkCard.css";
 
-    </div>
-    </>)
+interface frameworkCardProps {
+  title: string;
+  frameworks: { [key: string]: string };
 }
 
-export default FrameworkCard
+function FrameworkCard({ title, frameworks }: frameworkCardProps) {
+  return (
+    <>
+      <div className="framework-card"></div>
+    </>
+  );
+}
+
+export default FrameworkCard;
