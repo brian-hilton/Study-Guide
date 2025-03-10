@@ -128,5 +128,13 @@ export const studyCardsData = [
       println("Hello, world!")
   }`,
     },
+    {
+      title: "Lua",
+      description: "Scripting language for web games",
+      typing: "Static",
+      applications: ["Roblox, mobile"],
+      image: "/logos/kotlin.svg", 
+      syntax: ""
+    }
   ];
   
