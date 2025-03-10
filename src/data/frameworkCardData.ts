@@ -3,7 +3,7 @@ export const frameworkCardData = [
       title: "Python",
       frameworks: {
         "Web": ["Django", "Flask", "FastAPI"],
-        "DataScience": ["TensorFlow", "PyTorch", "Scikit-learn"],
+        "DataScience": ["TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "Numpy"],
         "Automation": ["Selenium", "PyAutoGUI"]
       }
     },
