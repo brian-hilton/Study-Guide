@@ -1,4 +1,81 @@
+.framework-page {
+    background-color: rgb(23, 30, 41); 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
 .framework-card {
-    background-color: hsl(199, 80%, 50%);
+    background-color: hsl(225, 27%, 30%); 
     font-family: "Poppins", sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    width: 300px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.framework-card:hover {
+    transform: scale(1.03);
+    background-color: hsl(225, 40%, 40%); 
+}
+
+.framework-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+.framework-list {
+    width: 100%;
+    padding: 0;
+}
+
+.framework-category {
+    margin-top: 10px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.framework-category h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: hsl(225, 35%, 20%);
+    color: hsl(199, 80%, 70%);
+    margin-bottom: 8px;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.framework-item {
+    list-style: none;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+    padding: 8px 0;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    background: hsl(225, 30%, 25%);
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+ul {
+    padding: 0; 
+    text-align: center;
+}
+
+.framework-item:hover {
+    background: hsl(199, 70%, 60%);
+    color: rgb(23, 30, 41);
+    font-weight: bold;
+    transform: scale(1.05);
 }
