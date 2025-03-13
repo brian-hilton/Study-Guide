@@ -1,5 +1,10 @@
+import "../styles/databaseContainer.css";
 function DatabaseCard() {
-    return(<></>)
+  return (
+    <>
+      <div className="db-card-container"> </div>{" "}
+    </>
+  );
 }
 
-export default DatabaseCard
+export default DatabaseCard;
