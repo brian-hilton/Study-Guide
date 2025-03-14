@@ -1,5 +1,7 @@
+import "../styles/databasePage.css";
+
 function Databases() {
-    return(<></>)
+  return <></>;
 }
 
-export default Databases
+export default Databases;
